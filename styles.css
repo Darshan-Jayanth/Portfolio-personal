@@ -1,3 +1,83 @@
+body{
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+.nav-link {
+    color: black;
+}
+footer > .bottom-border {
+    color: black;
+}
 label {
     font-size: 20px;
+}
+.hr {
+    border-top: 2px solid black;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+}
+/* project link buttons */
+.button{
+    width: 6.5em;
+    height: 2.5em;
+    border-radius: 25px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    background: #1CB5E0 ;
+}
+.button::before {
+    content: '';
+    width: 0;
+    height: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    margin: none;
+    background-image: linear-gradient(to right, #000851 0%, #1CB5E0 100%);
+    transition: .1s ease;
+    display: block;
+    z-index: -1;
+}
+.button:hover::before {
+    width: 100%;
+}
+.button > a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* form */
+form {
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    background-blend-mode: screen;
+    border-radius: 15px;
+}
+/* contact submit button */
+.button-submit{
+    height: 2.5em;
+    border-radius: 25px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    background: #dfe9f3 ;
+}
+.button-submit::before {
+    content: '';
+    width: 0;
+    height: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right,#fddb92 10%, #dfe9f3 100%);
+    transition: .1s ease;
+    display: block;
+    z-index: -1;
+}
+.button-submit:hover::before {
+    width: 100%;
 }
