@@ -6,13 +6,13 @@
     <title>Portfolio - Darshan S</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css"/>
-</head>
+  </head>
 
-<body>
+  <body>
 
 		<section id="header">
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center pt-4">
+            <header class="d-flex flex-wrap justify-content-center pt-4 pb-5">
               <ul class="nav nav-pills border-bottom">
                 <li class="nav-item"><a href="#home" class="nav-link" draggable="false" aria-current="page">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link" draggable="false">About</a></li>
@@ -24,7 +24,7 @@
     </section>
 
     <section id="home">
-			<div class="px-4 pt-4 text-center">
+			<div class="px-4 pt-2 text-center">
 				<h1 class="display-5 fw-bold text-body-emphasis">Darshan Srinivasa</h1>
 				<div class="col-lg-6 mx-auto">
 					<p class="lead">
@@ -35,13 +35,13 @@
     </section>
 
     <section id="about">
-			<div class="container col-xxl-8 px-4 py-3">
+			<div class="container col-xxl-9 px-4 py-3">
 				<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-					<div class="col-10 col-sm-8 col-lg-6">
-						<img src="./images/profile-pic.jpeg" class="d-block mx-lg-auto" alt="Profile pic" height="400" loading="lazy">
+					<div class="col-10 col-sm-8 col-lg-4">
+						<img src="./image/profile-pic.jpeg" class="profile" alt="Profile pic" height="400" draggable="false" loading="lazy">
 					</div>
-					<div class="col-lg-6">
-						<h2 class="pb-2 border-bottom">About</h2>
+					<div class="col-lg-8">
+						<h2>About</h2>
 						<p class="lead" style="text-align: justify;">
 							I am a passionate front-end developer who is enthusiastic about contributing to innovative projects.
 							With a strong commitment to creating visually appealing and user-friendly web experiences,
@@ -57,9 +57,9 @@
 
     <section id="projects">
         <div class="container px-4 py-3" id="hanging-icons">
-            <h2 class="pb-2 border-bottom">Projects</h2>
-            <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
-
+            <h2> Projects </h2>
+            <div class="row g-5 py-4 row-cols-1 row-cols-lg-2">
+              <!-- row-col- will determine how many rows and columns it should divide the below divs into -->
               <div class="col d-flex align-items-start">
                 <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 </div>
@@ -76,7 +76,7 @@
 									</p>
                   <button  class="button">
                     <a href="https://darshan-jayanth.github.io/Pack-N-Shift/" target="_blank">
-                    Click here
+                      View
                     </a>
                   </button>
                 </div>
@@ -94,7 +94,7 @@
 									</p>
                   <button  class="button">
                     <a href="https://darshan-jayanth.github.io/TinDog/" target="_blank">
-                    Click here
+                      View
                     </a>
                   </button>
                 </div>
@@ -112,7 +112,7 @@
 									</p>
                   <button  class="button">
                     <a href="https://darshan-jayanth.github.io/Mondrian-Pattern/" target="_blank">
-                    Click here
+                      View
                     </a>
                   </button>
                 </div>
@@ -131,7 +131,7 @@
 									</p>
                   <button  class="button">
                     <a href="https://darshan-jayanth.github.io/Pricing-Table/" target="_blank">
-                    Click here
+                      View
                     </a>
                   </button>
                 </div>
@@ -150,13 +150,13 @@
 										across various devices and screen sizes.
 									</p>
                   <button  class="button">
-                    <a href="https://darshan-jayanth.github.io/media-query/" target="_blank">
-                    Click here
+                    <a href="https://darshansrinivasa.github.io/Media-Query/" target="_blank">
+                      View
                     </a>
                   </button>
                 </div>
               </div>
-              
+
 							<div class="col d-flex align-items-start">
                 <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
                 </div>
@@ -170,12 +170,11 @@
 										Download my resume or reach out to me directly. 
 										Together, let's create something remarkable!
 									</p>
-                  <button  class="button">
+                  <button class="button">
                     <a href="https://darshan-jayanth.github.io/Resume/" target="_blank">
-                    Click here
+                      View
                     </a>
                   </button>
-                  
                 </div>
               </div>
 
@@ -187,7 +186,7 @@
 			<div class="row align-items-center g-lg-5 py-3 px-4">
 				<div class="col-md-10 mx-auto col-lg-5">
 					<h2 class="contact">Contact Me</h2>
-          <hr class="hr"/>
+
 					<form class="p-4 p-md-5 border mt-4 ">
 						<div class="form-floating mb-3">
 							<input type="text" class="form-control" id="floatingInput" placeholder="name">
@@ -202,32 +201,33 @@
 							<label for="floatingNumber">Mobile number</label>
 						</div>
 						<button class="w-50 button-submit" type="submit">Submit</button>
-						<hr class="my-4">
+						<hr class="my-4 mx-5" />
 						<small class="text-body-secondary">By clicking Submit, you agree to the terms of use.</small>
 					</form>
+
 				</div>
 			</div>
     </section>
 
     <section id="footer">
         <div class="container">
-            <footer class="py-3">
-              <ul class="nav justify-content-center ">
+            <footer class="pb-3 pt-5">
+              <ul class="nav justify-content-center">
                 <li class="nav-item"><a href="#home" class="nav-link px-2" draggable="false">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link px-2" draggable="false">About</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link px-2" draggable="false">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link px-2" draggable="false">Contact</a></li>
               </ul>
-
-							<div class="d-flex flex-column flex-sm-row justify-content-between pt-4 border-top">
+							<div class="d-flex flex-column flex-sm-row justify-content-between">
 								<p>© 2023 Darshan S, Inc. All rights reserved.</p>
 								<ul class="list-unstyled d-flex">
-									<li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/in/darshan-srinivasa"><img src="./svg/linkedin.svg" alt="linkedIn logo" width="24px"/></a></li>
-									<li class="ms-3 px-4"><a class="link-body-emphasis" href="https://github.com/Darshan-Jayanth"><img src="./svg/github.svg" alt="GitHub logo" width="24px"/></a></li>
+									<li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/in/darshan-srinivasa"><img src="./svg/linkedin.svg" alt="linkedIn logo" width="24px" draggable="false"/></a></li>
+									<li class="ms-3 px-4"><a class="link-body-emphasis" href="https://github.com/darshansrinivasa"><img src="./svg/github.svg" alt="GitHub logo" width="24px" draggable="false"/></a></li>
 								</ul>
 							</div>
             </footer>
           </div>
     </section>
 
-</body>
+  </body>
+</html>
