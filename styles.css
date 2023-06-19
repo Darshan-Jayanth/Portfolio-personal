@@ -1,21 +1,30 @@
 body{
+    background-image: linear-gradient(to top, #d1fdff 0%, #fddb92 100%);
+}
+#header {
     background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
 }
+#footer {
+    background-image: linear-gradient(to top, #fda34b 0%, #d1fdff 100%);
+}
+
 .nav-link {
     color: black;
 }
-footer > .bottom-border {
-    color: black;
+
+.profile{
+    -webkit-mask-image: url(image/graph.png);
+    -webkit-mask-position: bottom left;
+    -webkit-mask-size: 115%;
+    -webkit-mask-repeat: no-repeat;
 }
-label {
-    font-size: 20px;
-}
-.hr {
-    border-top: 2px solid black;
+hr {
+    border-top: 2px solid black; 
     margin: 0px;
     margin-top: 10px;
     padding: 0px;
 }
+
 /* project link buttons */
 .button{
     width: 6.5em;
@@ -25,7 +34,8 @@ label {
     border: none;
     overflow: hidden;
     z-index: 1;
-    background: #1CB5E0 ;
+    background-image: linear-gradient(to right,#fddb92 10%, #fda34b 100%);
+    
 }
 .button::before {
     content: '';
@@ -36,7 +46,9 @@ label {
     left: 0;
     border: none;
     margin: none;
-    background-image: linear-gradient(to right, #000851 0%, #1CB5E0 100%);
+    
+    background-image: linear-gradient(to right, #f83600 0%, #fda34b 100%);
+    
     transition: .1s ease;
     display: block;
     z-index: -1;
@@ -52,10 +64,18 @@ label {
 }
 /* form */
 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     background-blend-mode: screen;
     border-radius: 15px;
 }
+form > .button-submit {
+    width: 50%;
+    align-self: center;
+}
+
 /* contact submit button */
 .button-submit{
     height: 2.5em;
@@ -64,7 +84,7 @@ form {
     border: none;
     overflow: hidden;
     z-index: 1;
-    background: #dfe9f3 ;
+    background-image: linear-gradient(to right, #dfe9f3 0%, #1CB5E0 100%);
 }
 .button-submit::before {
     content: '';
@@ -73,7 +93,7 @@ form {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to right,#fddb92 10%, #dfe9f3 100%);
+    background-image: linear-gradient(to right, #000851 0%, #1CB5E0 100%);
     transition: .1s ease;
     display: block;
     z-index: -1;
